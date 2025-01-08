@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Project Report </h1> 
+    <main>
+        <section class="section">
+            <h2>Introduction</h2>
+            <h3>Introduction to Water Supply Pipeline Network Design in a City</h3>
+            <p>The efficient distribution of water is a critical infrastructure requirement in urban environments. This project focuses on designing an optimized water supply pipeline network for a city, leveraging principles and techniques from the domain of Design and Analysis of Algorithms (DAA). Water pipeline networks form the backbone of urban water supply systems, ensuring that households, industries, and public facilities have access to clean water.</p>
+            <p>The domain involves computational problem-solving in graph theory, optimization, and data structures to address challenges such as minimizing pipeline costs, ensuring consistent water pressure, and adapting to dynamic demand. Algorithms like Dijkstra's and Kruskal's are employed to find shortest paths and construct minimum spanning trees, respectively, for cost-efficient network layouts. Additionally, advanced data structures such as segment trees and union-find are utilized to manage and analyze network configurations effectively.</p>
+            <p>This project integrates these techniques to develop a reliable, efficient, and adaptable water distribution system. It addresses real-world issues like low-pressure zones, leakage detection, and maintenance planning. By applying theoretical concepts to practical scenarios, the project demonstrates the intersection of algorithmic design and urban planning, offering a model that can be scaled or adapted for various city layouts and requirements.</p>
+        </section>
+        <section class="section">
+            <h2>Problem Statement</h2>
+            <h3> Domain</h3>
+            <p>Managing urban water distribution networks is challenging due to rising demand, uneven pressure, leakage, and high operational costs. Manual monitoring is inefficient, making it essential to automate the design and optimization of pipeline networks. This project focuses on ensuring cost-effective, consistent, and sustainable water distribution across a city.</p>
+            <h3> Module Description</h3>
+            <p>For the "Water Supply Pipeline Network Design in a City" project, my focus has been on the algorithmic backbone and optimization modules of the system. I have worked specifically on the following components:</p>
+            <h3> Shortest Path For Maintenance using Dijkstra’s Algorithm</h3>
+            <p>I designed a module to compute the shortest path between any two houses, aiding in quick maintenance responses. This feature ensures minimal disruption during repairs or inspections.</p>
+            <h3> Complaint Registration System using queue And KMP</h3>
+            <p>I designed a complaint-handling system using the Knuth-Morris-Pratt (KMP) string-matching algorithm to efficiently locate house IDs and categorize complaints based on keywords. Additionally, I utilized a queue data structure to manage complaints in the order they were received. This ensures fair and sequential processing of complaints, making the system more user-friendly and organized.</p><br><br>
+            <section class="section">
+            <h2>Functionality Selection</h2><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sl. No.</th>
+                        <th>Functionality Name</th>
+                        <th>Known</th>
+                        <th>Unknown</th>
+                        <th>Principles applicable</th>
+                        <th>Algorithms</th>
+                        <th>Data Structures</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Calculating the shortest path between two specified houses.</td>
+                        <td>Dijkstra's algorithm is used to compute shortest paths based on edge weights (pipeline distances). Priority queues efficiently manage the computation.</td>
+                        <td>Addressing edge cases where no direct or indirect path exists between the selected houses and optimizing computation for large graphs to handle scalability issues in larger cities.</td>
+                        <td>Greedy Algorithms, Graph Theory</td>
+                        <td>Graph Algorithms: Dijkstra’s Algorithm: To find the shortest path between two houses for maintenance or inspections.</td>
+                        <td>Graph Representation, Priority Queue, Binary Heap</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Complaint Registration System</td>
+                        <td>Complaints are associated with specific house IDs, and string-matching algorithms like KMP efficiently locate partial matches. A queue manages complaints sequentially. Familiar with implementing KMP and managing queues for first-in, first-out (FIFO) operations.</td>
+                        <td>Matching partial IDs accurately in cases of overlapping substrings or types and preventing overloading of the queue when numerous complaints are registered simultaneously.</td>
+                        <td>Pattern Matching, Queue-Based Processing</td>
+                        <td>String Matching Algorithms, Tree-Based Algorithms, Search Algorithms</td>
+                        <td>String Matching Table: Prefix table (partial match table) for the Knuth-Morris-Pratt (KMP) algorithm, enabling efficient string pattern matching. Arrays for pipeline cost</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="section">
+            <h2> Functionality Analysis</h2>
+            <h2>Shortest Path for Maintenance (Dijkstra’s Algorithm):</h2> <h3>Workflow:</h3> <ul> <li>Initialize distances for all nodes to infinity, except the starting node (set to 0).</li>
+                 <li>Use a priority queue (min-heap) to process nodes by their current shortest distance.</li> <li>Update distances to neighbors if a shorter path is found.</li> <li>Continue until all reachable nodes are processed.</li> <li>Output the shortest path and its cost.</li> </ul>
+        </section>
+        <section class="section">
+            <h3>Efficiency Analysis</h3> <ul> <li>The time efficiency of Dijkstra’s algorithm depends on the data structure used for implementing the priority queue and for representing an input graph itself. It is in Θ(|V|^2) for graphs represented by their weight matrix and the priority queue implemented by an unordered array. For graphs represented by their adjacency lists and the priority queue implemented as a min-heap, it is O(|E| log|V|).</li> </ul><br>
+        <section class="section">
+             <h2>Complaint Registration System (KMP Algorithm + Queue):</h2>
+             <h3>Workflow</h3> <ul> <li>Accept user input for partial house ID and complaint details.</li> <li>Use the Knuth-Morris-Pratt (KMP) algorithm to match the partial ID with existing house IDs.</li> <li>If a match is found: <ul> <li>Categorize the complaint using predefined keywords.</li> <li>Add the complaint to a queue for sequential processing.</li> </ul> </li> <li>Display complaints in FIFO order when requested.</li> </ul> <h3>Efficiency Analysis</h3> <ul> <li>O(m) to compute prefix function values</li> <li>O(n) to compute pattern</li> <li>And the total is O(n+m)</li> </ul>
+        </section>
+        <section class="section">
+            <h2>Conclusion</h2>
+            <p><strong>Algorithmic Application in Real-World Scenarios:</strong><br> Understanding how theoretical algorithms like Kruskal’s and Dijkstra’s can be practically applied to optimize resource allocation and solve urban infrastructure problems.</p> <p><strong>Data Structure Utilization:</strong><br> Learning the importance of choosing appropriate data structures, such as adjacency lists, priority queues, and union-find, to optimize performance and memory usage.</p> 
+            <p><strong>Problem-Solving Skills:</strong><br> Breaking down complex problems into manageable modules and addressing them systematically.</p> <p>This project has enhanced technical skills in algorithm design and implementation, and boosted problem-solving abilities, and deepened understanding of real-world applications of computer science principles.</p>
+        </section>
+
+        <a href="index.html">Back to Home</a><br><br><br><br>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; Portfolio | Designed by Shivraj</p>
+    </footer>
+</body>
+</html>

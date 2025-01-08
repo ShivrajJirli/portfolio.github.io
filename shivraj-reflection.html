@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Course Reflection - Shivraj Jirli </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center;">Course Reflection </h1> 
+    <main>
+    <div class="section">
+        <h2>📘 Reflection</h2>
+        <p><strong>This course helped me deepen my understanding of algorithmic techniques, particularly dynamic programming and graph algorithms.</strong></p>
+        <p><strong>I applied these concepts to design efficient solutions for practical problems, enhancing my problem-solving skills.</strong></p> <br>
+      </div>
+
+    <div class="section">
+      <h2> 1) Types of Problems Found in Nature</h2> 
+      <ul<li><b>Common problem-solving patterns in nature include:</li>
+        <li><b>Iteration :</b> Repetitive processes like plant growth</li>
+        <li><b>Recursion :</b> Self-similar patterns like in fractals and tree branches.</li> 
+        <li><b>Backtracking :</b>Trial-and-error behavior like how ants find food paths.</li> <br>
+      </ul>
+    </div>
+
+    <div class="section">
+        <h2> 2) Space and Time Efficiency</h2>
+      
+        <div class="subsection">
+          <h3> * Space Efficiency</h3>
+          <p>Refers to the amount of memory or storage used by an algorithm. Efficient algorithms minimize memory usage, which is crucial for systems with limited resources.</p>
+        </div>
+      
+        <div class="subsection">
+          <h3> * Time Efficiency</h3>
+          <p>Refers to the speed or runtime of an algorithm. Faster algorithms ensure timely responses, especially in real-time applications like navigation systems or financial trading.</p>
+        </div> <br>
+      
+        <div class="subsection">
+          <h3> * Orders of Growth</h3>
+          <ul>
+            <li><strong>Constant (O(1)):</strong> Accessing an array element.</li>
+            <li><strong>Logarithmic (O(log n)):</strong> Binary search.</li>
+            <li><strong>Linear (O(n)):</strong> Iterating over a list.</li>
+            <li><strong>Linearithmetic (O(n log n)):</strong> Seen in merge sort, heap sort.</li>
+            <li><strong>Quadratic (O(n^2)):</strong> Nested loops.</li>
+            <li><strong>Cubic (O(n^3)):</strong> Triple nested loops.</li>
+            <li><strong>Exponential (O(2^n)):</strong> Recursive problems like the Towers of Hanoi.</li>
+            <li><strong>Factorial (O(n!)):</strong> Solving the N-Queens problem using brute force.</li> <br>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>3) Takeaways From Design Principles</h2> 
+      
+        <div class="subsection">
+          <h3> a) Divide and Conquer</h3> 
+          <ul>
+            <li><strong>Concept:</strong> Break down a complex problem into smaller, more manageable subproblems.</li>
+            <li><strong>Approach:</strong> 
+              <ul>
+                <li>Divide the problem into smaller subproblems.</li>
+                <li>Recursively solve each subproblem.</li>
+                <li>Combine the solutions of the subproblems to obtain the solution to the original problem.</li>
+              </ul>
+            </li>
+            <li><strong>Examples:</strong> Mergesort, Quicksort, Binary Search, Binary Tree traversals</li>
+            <li><strong>Benefits:</strong> Can significantly improve efficiency for problems that can be naturally divided.</li> <br>
+          </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3> b) Greedy Strategy</h3>
+          <ul>
+            <li><strong>Concept:</strong> Make the locally optimal choice at each step, assuming it will lead to the globally optimal solution.</li>
+            <li><strong>Approach:</strong> 
+              <ul>
+                <li>Make a series of choices without looking ahead.</li>
+                <li>Each choice is made based on what seems to be the best option at that particular moment.</li>
+              </ul>
+            </li>
+            <li><strong>Examples:</strong> Dijkstra's Algorithm (shortest paths), Huffman Coding (data compression), Activity Selection Problem</li>
+            <li><strong>Considerations:</strong> 
+              <ul>
+                <li>Greedy algorithms do not always guarantee the optimal solution.</li>
+                <li>The greedy choice property must hold for the algorithm to work correctly.</li><br>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3> c) Dynamic Programming</h3>
+          <ul>
+            <li><strong>Concept:</strong> Break down a problem into overlapping subproblems and solve them in a systematic way.</li>
+            <li><strong>Approach:</strong> 
+              <ul>
+                <li>Store the solutions to subproblems to avoid redundant calculations.</li>
+                <li>Can be implemented using memoization (top-down) or tabulation (bottom-up).</li>
+              </ul>
+            </li>
+            <li><strong>Examples:</strong> Fibonacci sequence, Knapsack problem, Matrix chain multiplication</li>
+            <li><strong>Key characteristics:</strong> Overlapping subproblems, optimal substructure.</li> <br>
+          </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3> d) Backtracking</h3>
+          <ul>
+            <li><strong>Concept:</strong> Systematically explore all possible solutions by incrementally building candidates.</li>
+            <li><strong>Approach:</strong> 
+              <ul>
+                <li>If a partial solution is found to be invalid, backtrack to a previous state and try a different path.</li>
+                <li>Explore all possible paths until a solution is found or it is determined that no solution exists.</li>
+              </ul>
+            </li>
+            <li><strong>Examples:</strong> N-Queens problem, Sudoku solver, Maze solving</li>
+            <li><strong>Useful for:</strong> Constraint satisfaction problems.</li> <br>
+          </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3> e) Limitations and Weaknesses</h3>
+          <ul>
+            <li><strong>Edge Cases:</strong> Algorithms may not handle all possible inputs correctly.</li>
+            <li><strong>Scalability Issues:</strong> Some algorithms may not perform well with large datasets or complex inputs.</li>
+            <li><strong>Performance Trade-offs:</strong> There may be trade-offs between time complexity, space complexity, and implementation complexity.</li> <br>
+          </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3> f) Simplicity vs. Optimization</h3>
+          <ul>
+            <li><strong>Simplicity:</strong> Sometimes, a simpler algorithm is preferred even if it is not the most efficient.</li>
+            <li><strong>Factors to consider:</strong> 
+              <ul>
+                <li>Readability and maintainability of the code.</li>
+                <li>Development time and cost.</li>
+                <li>The actual input size and frequency of use.</li>
+              </ul>
+            </li>
+            <li><strong>Example:</strong> Using Linear Search for small datasets might be simpler and more readable than implementing Binary Search, even though Binary Search is more optimized.</li><br>
+          </ul>
+        </div>
+    </div>
+    <div class="section">
+        <h2> 4) Hierarchical Data and Tree Structures</h2>
+      
+        <div class="subsection">
+          <h3>Hierarchical Data</h3>
+          <p>Hierarchical data is organized in a tree-like structure, where elements are connected by parent-child relationships.</p>
+          <ul>
+            <li><strong>Family Trees:</strong> Represent family relationships with individuals as nodes and parent-child links as edges.</li>
+            <li><strong>Company Hierarchies:</strong> Depict organizational structures with departments, teams, and individuals as nodes, and reporting relationships as edges.</li>
+            <li><strong>File Systems:</strong> Organize files and directories on a computer, with directories as parent nodes and files as child nodes.</li> <br>
+          </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3>Tree Structures</h3>
+          <p>Trees are fundamental data structures in computer science. Key characteristics include:</p>
+          <ul>
+            <li><strong>Root Node:</strong> The topmost node in the tree.</li>
+            <li><strong>Leaf Nodes:</strong> Nodes with no children.</li>
+            <li><strong>Parent-Child Relationships:</strong> Each node (except the root) has exactly one parent node.</li>
+          </ul>
+      
+          <p>Common types of trees include:</p>
+          <ul>
+            <li><strong>Binary Search Tree (BST):</strong> 
+              <ul>
+                <li>A binary tree where the left subtree contains nodes with values less than the current node.</li>
+                <li>The right subtree contains nodes with values greater than the current node.</li>
+                <li>Efficient for searching, insertion, and deletion operations.</li>
+              </ul>
+            </li>
+            <li><strong>AVL Tree:</strong> 
+              <ul>
+                <li>A self-balancing BST that maintains a balanced height.</li>
+                <li>Ensures efficient search, insertion, and deletion operations in logarithmic time.</li>
+              </ul>
+            </li>
+            <li><strong>Red-Black Tree:</strong> 
+              <ul>
+                <li>Another self-balancing BST that uses color (red or black) to maintain balance.</li>
+                <li>Provides guaranteed logarithmic time for all operations.</li>
+              </ul>
+            </li>
+            <li><strong>Heap:</strong> 
+              <ul>
+                <li>A complete binary tree that satisfies the heap property.</li>
+                <li><strong>Max-Heap:</strong> The value of each parent node is greater than or equal to the values of its children.</li>
+                <li><strong>Min-Heap:</strong> The value of each parent node is less than or equal to the values of its children.</li>
+                <li>Used for priority queue implementations.</li>
+              </ul>
+            </li>
+            <li><strong>Trie:</strong> 
+              <ul>
+                <li>A tree-like data structure specifically designed for string storage and retrieval.</li>
+                <li>Efficient for prefix-based searches and string matching.</li> <br>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="section">
+        <h2> 5) Algorithm for Array Queries</h2>
+        <p>Array query algorithms (like segment trees, Fenwick trees) enable efficient range queries and updates.</p> Applications include statistical computations, financial analysis, and game development, with O(log n) complexity for most operations.</p><br>
+      </div>
+
+      <div class="section">
+        <h2> 6) Trees and Graphs</h2>
+      
+        <div class="subsection">
+          <h3> * Tree</h3>
+          <p>A connected, acyclic graph with a unique path between any two nodes. Traversals include pre-order, in-order, and post-order.</p>
+        </div>
+      
+        <div class="subsection">
+          <h3> * Graph</h3>
+          <p>A collection of vertices connected by edges, which may have cycles. Graph traversal methods include:</p>
+          <ul>
+            <li><strong>BFS (Breadth-First Search):</strong> Explores nodes level by level.</li>
+            <li><strong>DFS (Depth-First Search):</strong> Explores nodes deeply before backtracking.</li><br>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2> 7) Sorting and Searching Algorithms</h2>
+      
+        <div class="subsection">
+          <h3>Sorting Algorithms</h3>
+          <ul>
+            <li><strong>Bubble Sort:</strong> 
+              <ul>
+                <li>A simple sorting algorithm with a time complexity of O(n^2).</li>
+                <li>Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.</li>
+                <li>Generally considered inefficient for large datasets due to its high time complexity.</li>
+              </ul>
+            </li>
+            <li><strong>Selection Sort:</strong> 
+              <ul>
+                <li>Another simple sorting algorithm with a time complexity of O(n^2).</li>
+                <li>Finds the minimum element in the unsorted portion of the list and places it at the beginning.</li>
+                <li>Suitable for small datasets but less efficient for larger ones.</li>
+              </ul>
+            </li>
+            <li><strong>Insertion Sort:</strong> 
+              <ul>
+                <li>An efficient algorithm with a time complexity of O(n) for nearly sorted data and O(n^2) for random data.</li>
+                <li>Builds the sorted array one element at a time by inserting each element into its correct position.</li>
+                <li>Works well for partially sorted data but can be inefficient for large, randomly ordered datasets.</li>
+                <li>An in-place sorting algorithm, meaning it sorts the data in the same memory location.</li>
+              </ul>
+            </li>
+            <li><strong>Merge Sort:</strong> 
+              <ul>
+                <li>A powerful and stable sorting algorithm with a time complexity of O(n log n).</li>
+                <li>Based on the divide-and-conquer paradigm.</li>
+                <li>Divides the list into two halves, recursively sorts each half, and then merges the sorted halves.</li>
+                <li>Ideal for large datasets due to its consistent performance.</li>
+              </ul>
+            </li>
+            <li><strong>Quick Sort:</strong> 
+              <ul>
+                <li>An efficient and versatile sorting algorithm with an average time complexity of O(n log n).</li>
+                <li>Uses the partition technique to divide the list into two sublists: elements less than the pivot and elements greater than the pivot.</li>
+                <li>Performs well for large datasets but can have a worst-case time complexity of O(n^2) in certain cases.</li>
+              </ul>
+            </li>
+            <li><strong>Heap Sort:</strong> 
+              <ul>
+                <li>An efficient in-place sorting algorithm with a time complexity of O(n log n).</li>
+                <li>Uses a binary heap data structure to efficiently sort the elements.</li>
+                <li>Less commonly used than Quick Sort or Merge Sort in practice but is useful in scenarios where memory efficiency is crucial.</li><br>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3>String Searching Algorithms</h3>
+          <ul>
+            <li><strong>Boyer-Moore Algorithm:</strong> 
+              <ul>
+                <li>A string-search algorithm that finds occurrences of a pattern in a given text.</li>
+                <li>Efficient due to its pattern pre-processing step, which allows it to skip over large portions of the text in some cases.</li>
+              </ul>
+            </li>
+            <li><strong>Knuth-Morris-Pratt Algorithm (KMP):</strong> 
+              <ul>
+                <li>Another string search algorithm that avoids redundant comparisons by pre-processing the pattern.</li>
+                <li>Uses a table to keep track of the longest proper prefix that is also a suffix of a given substring of the pattern.</li>
+              </ul>
+            </li>
+            <li><strong>Rabin-Karp Algorithm:</strong> 
+              <ul>
+                <li>An improvement over brute-force string search.</li>
+                <li>Uses hashing techniques to efficiently compare substrings of the text with the pattern.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3>Graph Algorithms</h3>
+          <ul>
+            <li><strong>Kruskal's Algorithm:</strong> 
+              <ul>
+                <li>A greedy algorithm used to find the Minimum Spanning Tree (MST) of a weighted graph.</li>
+                <li>Connects all vertices of the graph with the minimum possible total edge weight without forming any cycles.</li>
+                <li>Uses the union-find data structure to efficiently determine whether adding an edge creates a cycle.</li>
+              </ul>
+            </li>
+            <li><strong>Dijkstra's Algorithm:</strong> 
+              <ul>
+                <li>A graph traversal algorithm used to find the shortest paths from a single source vertex to all other vertices in a weighted graph.</li>
+                <li>Works for graphs with non-negative edge weights.</li>
+                <li>Widely used in network routing and pathfinding applications.</li>
+              </ul>
+            </li>
+            <li><strong>Floyd's Algorithm:</strong> 
+              <ul>
+                <li>A dynamic programming approach to find the shortest paths between all pairs of vertices in a weighted graph.</li>
+                <li>Can handle negative edge weights (except for negative weight cycles).</li>
+                <li>Works for both directed and undirected graphs.</li>
+              </ul>
+            </li>
+            <li><strong>Warshall's Algorithm:</strong> 
+              <ul>
+                <li>Similar to Floyd's Algorithm, it finds all-pairs shortest paths.</li>
+                <li>May not necessarily identify the most optimal paths.</li>
+              </ul>
+            </li>
+            <li><strong>Prim's Algorithm:</strong> 
+              <ul>
+                <li>Another greedy algorithm used to find the Minimum Spanning Tree (MST) of a weighted graph.</li>
+                <li>Starts with a single vertex and gradually grows the MST by adding the minimum-weight edge that connects a vertex in the MST to a vertex outside the MST.</li><br>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="section">
+        <h2> 8) Algorithm Design Techniques</h2>
+      
+        <div class="subsection">
+          <h3>Divide and Conquer</h3>
+            <ul>
+              <li>Breaks down problems into smaller subproblems.</li>
+              <li>Solves each subproblem independently.</li>
+              <li>Combines the solutions of subproblems to solve the original problem.</li>
+              <li><strong>Examples:</strong> Mergesort, Quicksort, Binary Search</li>
+              <li><strong>Best suited for:</strong> Problems that can be naturally divided into similar subproblems.</li>
+            </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3>Dynamic Programming</h3>
+            <ul>
+              <li>Solves complex problems by breaking them into simpler subproblems.</li>
+              <li>Stores the results of subproblems to avoid redundant calculations.</li>
+              <li>Can be implemented using memoization (top-down) or tabulation (bottom-up).</li>
+              <li><strong>Examples:</strong> Fibonacci sequence, Knapsack problem, Matrix chain multiplication</li>
+              <li><strong>Ideal for:</strong> Problems with overlapping subproblems and optimal substructure.</li>
+            </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3>Greedy Algorithms</h3>
+            <ul>
+              <li>Makes locally optimal choices at each step.</li>
+              <li>Assumes that a series of locally optimal choices will lead to a globally optimal solution.</li>
+              <li>Does not reconsider previous choices.</li>
+              <li><strong>Examples:</strong> Kruskal's algorithm (MST), Huffman coding, Activity selection</li>
+              <li><strong>Works well when:</strong> The greedy choice property holds, meaning that a locally optimal choice always leads to a globally optimal solution.</li>
+            </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3>Backtracking</h3>
+            <ul>
+              <li>Systematically explores all possible solutions.</li>
+              <li>Abandons a partial solution if it's determined that it cannot lead to a valid solution.</li>
+              <li><strong>Examples:</strong> N-Queens problem, Sudoku solver, Maze solving</li>
+              <li><strong>Useful for:</strong> Constraint satisfaction problems.</li>
+            </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3>Branch and Bound</h3>
+            <ul>
+              <li>Similar to backtracking but uses bounds to prune the search space.</li>
+              <li>Maintains the best solution found so far.</li>
+              <li>Uses a bounding function to estimate the best possible solution from a given partial solution.</li>
+              <li><strong>Examples:</strong> Traveling Salesman Problem, Job Assignment</li>
+              <li><strong>Effective for:</strong> Optimization problems where early pruning can significantly reduce the search space.</li>
+            </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3>Trade-offs</h3>
+            <ul>
+              <li>Each technique has its own strengths and weaknesses.</li>
+              <li>Time complexity, space complexity, and ease of implementation vary between techniques.</li>
+              <li>The choice of technique depends on the specific characteristics of the problem.</li><br>
+            </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2> 9) Graph Algorithms - Spanning Trees and Shortest Paths</h2>
+      
+        <div class="subsection">
+          <h3>1. Spanning Trees</h3>
+          <ul>
+            <li>Connect all vertices in a graph with the minimum number of edges.</li>
+            <li><strong>Minimum Spanning Tree (MST):</strong> A spanning tree with the minimum total weight of edges.</li>
+            <li><strong>Key Algorithms:</strong>
+              <ul>
+                <li><strong>Kruskal's Algorithm:</strong> Selects edges in ascending order of weight, avoiding cycles.</li>
+                <li><strong>Prim's Algorithm:</strong> Grows the tree from a single vertex, adding the nearest vertex at each step.</li>
+              </ul>
+            </li>
+            <li><strong>Applications:</strong> Network design, circuit design, cluster analysis.</li>
+          </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3>2. Shortest Paths</h3>
+          <ul>
+            <li>Find the optimal path between two or more vertices in a graph.</li>
+            <li><strong>Algorithms serve different purposes:</strong>
+              <ul>
+                <li><strong>Dijkstra's Algorithm:</strong> Finds the shortest paths from a single source vertex to all other vertices in a weighted graph with non-negative edge weights.</li>
+                <li><strong>Floyd-Warshall Algorithm:</strong> Finds the shortest paths between all pairs of vertices in a graph, including those with negative edge weights (but no negative cycles).</li>
+                <li><strong>Bellman-Ford Algorithm:</strong> Handles graphs with negative edge weights, but can detect negative cycles.</li>
+              </ul>
+            </li>
+            <li><strong>Applications:</strong> GPS navigation, routing protocols (e.g., in the internet), social network analysis, transportation planning.</li>
+          </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3>3. Real-world Applications</h3>
+          <ul>
+            <li><strong>Transportation Networks:</strong> Optimizing routes for public transport, delivery services, and logistics.</li>
+            <li><strong>Computer Network Routing:</strong> Finding the most efficient paths for data transmission in the internet.</li>
+            <li><strong>Civil Infrastructure Planning:</strong> Designing efficient road, water, and electrical grids.</li>
+            <li><strong>Supply Chain Optimization:</strong> Finding the most cost-effective routes for transporting goods.</li>
+            <li><strong>Social Network Analysis:</strong> Identifying influential nodes and communities within social networks.</li>
+            <li><strong>Telecommunications Network Design:</strong> Planning efficient communication networks with minimal cost and latency.</li>
+          </ul>
+        </div>
+      
+        <div class="subsection">
+          <h3>4. Importance</h3>
+          <ul>
+            <li><strong>Cost Optimization:</strong> Minimizing costs in network design and infrastructure planning.</li>
+            <li><strong>Efficient Resource Allocation:</strong> Optimizing the use of resources in various applications.</li>
+            <li><strong>Reduced Network Latency:</strong> Ensuring faster data transmission and improved user experience.</li>
+            <li><strong>Improved Connectivity:</strong> Enhancing connectivity and accessibility in networks.</li>
+            <li><strong>Optimized Infrastructure Planning:</strong> Designing efficient and cost-effective infrastructure solutions.</li> <br>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2> 10) Trees vs. Graphs: A Comprehensive Comparison</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Trees</th>
+              <th>Graphs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Basic Structure</td>
+              <td>
+                <ul>
+                  <li>Hierarchical data structure</li>
+                  <li>No cycles allowed</li>
+                  <li>Exactly one path between any two nodes</li>
+                  <li>Has a root node</li>
+                  <li>N nodes have N-1 edges</li>
+                  <li>Every node (except root) has exactly one parent</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Network-like data structure</li>
+                  <li>Can have cycles</li>
+                  <li>Multiple paths possible between nodes</li>
+                  <li>No root node concept</li>
+                  <li>Can have up to N(N-1)/2 edges</li>
+                  <li>Nodes can have multiple connections</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Traversal Methods</td>
+              <td>
+                <ul>
+                  <li>Depth-First Traversals: 
+                    <ul>
+                      <li>Pre-order (Root → Left → Right)</li>
+                      <li>In-order (Left → Root → Right)</li>
+                      <li>Post-order (Left → Right → Root)</li>
+                    </ul>
+                  </li>
+                  <li>Breadth-First Traversal: Level-order traversal</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Depth-First Search (DFS): Uses stack (or recursion), explores depth first</li>
+                  <li>Breadth-First Search (BFS): Uses queue, explores breadth first</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Applications</td>
+              <td>
+                <ul>
+                  <li>File Systems</li>
+                  <li>File organization</li>
+                  <li>Organization Charts</li>
+                  <li>Family trees</li>
+                  <li>XML/HTML DOM</li>
+                  <li>Web parsing</li>
+                  <li>Decision Trees (AI/ML applications)</li>
+                  <li>Game algorithms</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Social Networks</li>
+                  <li>Network analysis</li>
+                  <li>Transportation: Road networks, Flight paths</li>
+                  <li>GPS navigation</li>
+                  <li>Computer Networks: Internet routing, Network topology</li>
+                  <li>Recommendation Systems: Product recommendations, Friend suggestions</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+    
+    
+    
+  
+
+    <a href="index.html">Back to Home</a>
+  </div>
+</main>
+<br><br><br><br><br><br><br><br>
+<footer><p>&copy;Portfolio | Designed by Shivraj</p></footer>
+
+</body>
+</html>
